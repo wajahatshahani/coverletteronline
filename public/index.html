@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Cover Letter Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- jsPDF CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Cover Letter Generator</h1>
+    
+    <form id="coverForm">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" placeholder="e.g., Wajahat" required>
+
+      <label for="jobTitle">Job Title *</label>
+      <input type="text" id="jobTitle" placeholder="e.g., Data Analyst" required>
+
+      <label for="company">Company / Institution *</label>
+      <input type="text" id="company" placeholder="e.g., GCU Hyderabad" required>
+
+      <label for="experience">Experience (e.g., 3 years)</label>
+      <input type="text" id="experience" placeholder="e.g., 3 years">
+
+      <label for="skills">Skills / Expertise</label>
+      <input type="text" id="skills" placeholder="e.g., SQL, Python, Excel">
+
+      <label for="tone">Tone</label>
+      <select id="tone">
+        <option value="Professional" selected>Professional</option>
+        <option value="Formal">Formal</option>
+        <option value="Modern">Modern</option>
+      </select>
+
+      <button type="submit">Generate Cover Letter</button>
+    </form>
+
+    <textarea id="result" placeholder="Your generated cover letter will appear here..." readonly></textarea>
+
+    <div class="button-group">
+      <button id="copyBtn">Copy</button>
+      <button id="downloadPdf">Download PDF</button>
+    </div>
+  </div>
+
+  <!-- Frontend JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #007bff;
+}
+
+/* Form Inputs */
+form input, form select, form button, textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/* Dropdown label */
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+/* Buttons */
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Textarea styling */
+textarea {
+  resize: vertical;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  margin-top: 15px;
+  min-height: 150px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Copy & Download Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#copyBtn, #downloadPdf {
+  flex: 1 1 48%;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+#copyBtn:hover, #downloadPdf:hover {
+  background-color: #218838;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .button-group {
+    flex-direction: column;
+  }
+  #copyBtn, #downloadPdf {
+    width: 100%;
+  }
+}
